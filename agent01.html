@@ -1,22 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Boost du Jour 🎉</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       background: radial-gradient(circle at center, #ffffff, #e6fff2);
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      height: 100vh; text-align: center;
       color: #004d40;
     }
     .card {
@@ -28,40 +23,21 @@
       max-width: 500px;
       animation: fadeIn 1.5s ease-in-out;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    .emoji {
-      font-size: 40px;
-    }
+    h1 { font-size: 28px; margin-bottom: 10px; }
+    p { font-size: 18px; margin-top: 10px; }
+    .emoji { font-size: 40px; }
     @keyframes fadeIn {
       0% { opacity: 0; transform: scale(0.9); }
       100% { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
-<body onload="playAudio()">
+<body>
   <div class="card">
     <div class="emoji">🎉🔥💪</div>
-    <h1>Hey Younes !</h1>
-    <p>🚀 Bravo Younes ! Tu fais partie du Top 3 aujourd’hui — continue comme ça 💪🔥</p>
+    <h1>Hey Persona !</h1>
+    <p>🚀 Bravo, tu es dans le Top 3 aujourd’hui — continue comme ça 💪🔥</p>
     <p class="emoji">🌟🚀</p>
   </div>
-
-  <audio id="motivationSound" src="motivation.mp3" preload="auto"></audio>
-
-  <script>
-    function playAudio() {
-      const audio = document.getElementById('motivationSound');
-      if (audio) {
-        audio.play().catch(e => console.log("Audio bloqué : interaction requise."));
-      }
-    }
-  </script>
 </body>
 </html>
